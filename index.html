@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+     
+        #container1{
+            /* border: 1px solid red; */
+            width: 75%;
+            /* height: 600px; */
+            margin: auto;
+            display: flex;
+            /* align-items: center; */
+            background-color: white;
+        }
+        .left0{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            text-align: center;
+            padding-top: 15px;
+            box-sizing: border-box;
+            color: white;
+            background-color: #ab0001;
+            margin-left: 10px;
+        }
+        .left1{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color: #89a02c;
+            box-sizing: border-box;
+        }
+        .left2{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color: #ff5555;
+            color: black;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 15px;
+            box-sizing: border-box;
+        }
+        .left3{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#ffe6d5;
+            box-sizing: border-box;
+            
+        }
+        .si{
+            border: 1px solid blue ;
+            height: 150px;
+            width: 150px;
+            margin-top: 40px;
+            box-sizing: border-box;
+            background-color: #89a02c;
+            /* display: flex; */
+
+        }
+        .sibottom{
+            display: flex;
+        }
+        .left4{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 8px;
+            background-color:#0000fe;
+            box-sizing: border-box;
+
+        }
+        .orange{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#ff6600;
+            box-sizing: border-box;
+        }
+        .green{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#5aa02c;
+            box-sizing: border-box;
+
+        }
+        .voilet{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#ffe6d5;
+            box-sizing: border-box;
+            background-color:#aa0087;
+
+        }
+        .gray{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#ffe6d5;
+            box-sizing: border-box;
+            background-color:#6d535e;
+
+        }
+        .red{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#ffe6d5;
+            box-sizing: border-box;
+            background-color:#ff0066;
+
+        }
+        .yellow{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            /* gap: 10px; */
+            margin: 10px;
+            background-color:#ffe6d5;
+            box-sizing: border-box;
+            background-color:#ffcc00;
+
+        }
+        .si>p:first-child{
+            padding-left: 120px;
+            /* font-size: 40px; */
+            /* font-weight: 500; */
+        }
+        .si>h1{
+            padding-left: 20px;
+        }
+        .si>p:last-child{
+            /* margin-bottom: 20px; */
+            padding-left: 10px;
+            /* color: red; */
+            font-weight: 600;
+        }
+        .column1{
+            margin: 10px;
+        }
+        .cloumn2{
+            margin-top: 60px;
+    
+        }
+        .column3{
+            margin-top: 300px;
+    
+        }
+       
+        .cloumn5{
+            margin-left: 450px;
+            margin-top: 60px;
+        }
+        .cloumn6{
+            margin-top: 60px;
+        }
+        .cloumn7{
+            margin-top: 60px;
+        }
+        .container2{
+            width: 40%;
+            height: 100px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top:50px ;
+            /* display: flex; */
+            /* background-color: white; */
+            align-items: center;
+        }
+        .la{
+            display: flex;
+        }
+        .am{
+            display: flex;
+            /* box-sizing: border-box; */
+        }
+        .empty{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: #47582e;
+            box-sizing: border-box;
+        }
+        .no{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: #95bc5f;
+        }
+        .la:first-child{
+            color: white;
+            /* padding-left: 10px; */
+            text-align: center;
+            font-weight: 200;
+            font-size: 18px;
+        }
+        .am>div:nth-child(7){
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 7px;
+        }
+        .am>div:last-child{
+            font-size: 18px;
+            font-weight: 600px;
+            padding-left: 8px;
+
+        }
+     
+   
+   
+   
+
+ 
+        
+      
+    </style>
+</head>
+<body>
+    <CENTer><h1>THE PERIODIC TABLE OF ELEMENTS</h1></CENTer>
+    <div id="container1">
+        <div class="column1">
+            <div class="left0">H</div>
+            <div class="left1"></div>
+            <div class="left1"></div>
+            <div class="left1"></div>
+            <div class="left1"></div>
+            <div class="left1"></div>
+            <div class="left1"></div>
+        </div>
+
+        <div class="cloumn2">
+            <div class="left2">4</div>
+            <div class="left2">12</div>
+            <div class="left2">20</div>
+            <div class="left2">38</div>
+            <div class="left2">56</div>
+            <div class="left2">88</div>
+        </div>
+
+        <div class="column3">
+            <div class="left3"></div>
+            <div class="left3"></div>
+
+        </div>
+        <div class="si">
+            <p>14</p>
+            <h1>Si</h1>
+            <p>Silicon</p>
+            <div class="sibottom">
+
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+    
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+                
+                <div class="cloumn4">
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                    <div class="left4"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cloumn5">
+            <div class="voilet"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="gray"></div>
+        </div>
+
+        <div class="cloumn6">
+            <div class="green"></div>
+            <div class="voilet"></div>
+            <div class="voilet"></div>
+            <div class="orange"></div>
+            <div class="orange"></div>
+            <div class="gray"></div>
+        </div>
+
+        <div class="cloumn7">
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="voilet"></div>
+            <div class="voilet"></div>
+            <div class="orange"></div>
+            <div class="gray"></div>
+        </div>
+
+        <div class="cloumn7">
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="green"></div>
+            <div class="voilet"></div>
+            <div class="voilet"></div>
+            <div class="gray"></div>
+        </div>
+
+        <div class="cloumn7">
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="gray"></div>
+        </div>
+
+        <div class="cloumn8">
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="la">
+            <div class="empty"><p>La</p></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+        </div>
+
+        <div class="am">
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"><p>Am</p></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"></div>
+            <div class="no"><p>No</p></div>
+        </div>
+
+    </div>
+
+    
+
+
+
+ 
+
+
+
+
+
+</body>
+</html>
