@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <div id="container"></div>
+    
+</body>
+</html>
+
+<script>
+    var cartData=JSON.parse(localStorage.getItem("cart"));
+    console.log(cartData);
+
+   var total=cartData.reduce(function(acc,elem,index,arr){
+       return acc+(elem.price);
+   },0)
+   console.log(total);
+   var length=cartData.length;
+   document.querySelector("p").innerText=`You have item ${length} total is Rs ${total}`
+
+
+
+  cartData.map(function(elem,index){
+      var innerDiv=document.createElement("div");
+
+      var image=document.createElement("img");
+      image.src=elem.image_url;
+
+      var name=document.createElement("p")
+      name.innerText=elem.name;
+
+      var price=document.createElement("p");
+      price.innerText=elem.price;
+
+      var btn=document.createElement("button");
+      btn.innerText="Remove";
+
+      btn.addEventListener("click",function(){
+          removeItem(elem,index)
+      })
+
+      innerDiv.append(image,name,price,btn);
+   document.querySelector("#container").append(innerDiv);
+  })
+
+  function removeItem(elem,index){
+      console.log(elem,index)
+      cartData.splice(index,1)
+      console.log(cartData)
+      localStorage.setItem("cart",JSON.stringify(cartData))
+      window.location.reload()
+  }
+</script>
